@@ -2,7 +2,9 @@
 width: 100%;
 background-color: teal;
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .topnav {
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
@@ -44,8 +46,32 @@ background-color: teal;
         font-size: 30px;
     }
 
-    .btn-order{
+    .btn-daftar{
         font-size: 30px;
+    }
+
+    .bigwhat{
+        height: 150px;
+    }
+
+    .aboutus img{
+        width: 40%;
+        padding: 0 5%;
+    }
+    
+    .aboutus p{
+        padding: 0 5%;
+        align-self: center;
+    }
+
+    .ourmiss img{
+        width: 40%;
+        padding: 0 5%;
+    }
+    
+    .ourmiss p{
+        padding: 0 5%;
+        align-self: center;
     }
 }
 
@@ -54,8 +80,32 @@ background-color: teal;
         font-size: 15px;
     }
 
-    .btn-order{
+    .btn-daftar{
         font-size: 15px;
+    }
+
+    .bigwhat{
+        height: 200px;
+    }
+
+    .aboutus img{
+        width: 80%;
+        padding: 10%;
+    }
+    
+    .aboutus p{
+        padding: 0 10%;
+        align-self: center;
+    }
+
+    .ourmiss img{
+        width: 80%;
+        padding: 10%;
+    }
+    
+    .ourmiss p{
+        padding: 0 10%;
+        align-self: center;
     }
 
 }
@@ -71,7 +121,7 @@ background-color: teal;
     text-align: center;
 }
 
-.btn-order{
+.btn-daftar{
     background-color: teal;
     border: none;
     padding: 10px 20px;
@@ -87,34 +137,100 @@ background-color: teal;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn-order:hover {
+.btn-daftar:hover {
     background-color: white;
     color: teal;
     cursor: pointer;
   }
 
 .content-1{
-    float: left;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .what{
     margin: 2%;
     padding: 2%;
     float: left;
-    width: 25.3%;
-    height: 150px;
+    width: 25%;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    background-color: teal;
+
+}
+#w1{float:left;}
+#w3{float:right;}
+#w2{display: inline-block;}
+
+
+section h2, .content-1 h1, section p{
+    text-align: center;
+}
+
+.content-2{
     background-color: #26ADB8;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section h2, section h1, section p{
-    text-align: center;
+.aboutus{
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 
-
+.ourmiss{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+  
+  .form-popup {
+    display: none;
+    position: absolute;
+    font-weight: bold;
+    top: 40%;
+    left: 40%;
+    bottom: 0;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .form-container .btn {
+    background-color: teal;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  .form-container .cancel {
+    background-color: tomato;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
     
 
 
