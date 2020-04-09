@@ -6,67 +6,94 @@
         <link rel="stylesheet" href="style.css">
     </head>           
     <body>
+        <header>
             <div class="topnav"> 
                 <a href="#"><img class="logo" src="icon-mariteam.png"></a>      
                 <a href="#1">What's wrong with our sea ?</a>
                 <a href="#2">About Us</a>            
-        </div>
+            </div>
+        </header>
 
-        <div class="jumbotron">
-            <img class="sea" src="sea.png">
-            <div class="greetings">
-                <p>"KULAKAN IKAN MEMANG BIKIN RIBET, TAPI BISA LEBIH PRAKTIS DENGAN MARITEAM"</p>
+        <main>
+            <div class="jumbotron">
+                <img class="sea" src="sea.png">
+                <div class="greetings">
+                    <p>"KULAKAN IKAN MEMANG BIKIN RIBET, TAPI BISA LEBIH PRAKTIS DENGAN MARITEAM"</p>
+                </div>
+                <div class="greetings2">
+                    <button class="btn-daftar" onclick="daftar()">DAFTAR</button>
+                </div>
             </div>
-            <div class="greetings2">
-                <button class="btn-daftar" onclick="daftar()">DAFTAR</button>
+                    
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>Sign Up</h1>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Sign Up</button>
+                  <button type="button" class="btn cancel" onclick="cancel()">Cancel</button>
+                </form>
+              </div>
+    
+            <div class="content-1" id="1">
+                <h1>What's on our sea ?</h1> 
+                <div class="bigwhat">
+                    <div class="what" id="w1">
+                    <h2>1.</h2>
+                        <p>72.2% of fisherman in indonesia are have poor life</p>
+                    </div>
+                    <div class="what" id="w2">
+                        <h2>2.</h2>
+                        <p>Hard to find a reliable customer or fish supplier that want to be their custom market</p>
+                    </div>
+                    <div class="what" id="w3">
+                        <h2>3.</h2>
+                        <p>Fish distribution have very long distribution chains</p>
+                    </div>           
+                </div>            
             </div>
-        </div>
+            <div class="content-2" id="2">
+                <article>
                 
-        <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-              <h1>Sign Up</h1>
-          
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required>
-          
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-          
-              <button type="submit" class="btn">Sign Up</button>
-              <button type="button" class="btn cancel" onclick="cancel()">Cancel</button>
-            </form>
-          </div>
+                    <h2 style="text-align: center;">About Us</h1>
+                    <div class="aboutus">
+                        <p>Mariteam is an online integrated fishery-commerce platform by connecting fisherman as local partner with customer in large number order B2B (Business to Business) more easily.</p>
+                         <img src="icon-mariteam.png">
+                    </div>
+                    <h2 style="text-align: center;">Our Mission</h1>
+                     <div class="ourmiss"> 
+                        <img src="misi.png">
+                        <p>Mariteam is an online integrated fishery-commerce platform by connecting fisherman as local partner with customer in large number order B2B (Business to Business) more easily.</p>    
+                     </div>
+                </article>
+                <aside>
+                    <pre>
+                        Profil
+NIK                                     Jenis Kelamin
+3175067006981004                        Female
 
-        <div class="content-1" id="1">
-            <h1>What's on our sea ?</h1> 
-            <div class="bigwhat">
-                <div class="what" id="w1">
-                <h2>1.</h2>
-                    <p>72.2% of fisherman in indonesia are have poor life</p>
-                </div>
-                <div class="what" id="w2">
-                    <h2>2.</h2>
-                    <p>Hard to find a reliable customer or fish supplier that want to be their custom market</p>
-                </div>
-                <div class="what" id="w3">
-                    <h2>3.</h2>
-                    <p>Fish distribution have very long distribution chains</p>
-                </div>           
-            </div>            
-        </div>
+Tempat, Tanggal Lahir                   Agama
+Nganjuk, 30 Juni 1998                   Islam
 
-        <div class="content-2" id="2">
-            <h2 style="text-align: center;">About Us</h1>
-            <div class="aboutus">
-                <p>Mariteam is an online integrated fishery-commerce platform by connecting fisherman as local partner with customer in large number order B2B (Business to Business) more easily.</p>
-                 <img src="icon-mariteam.png">
+Warga Negara                            Jl. Sumbersari 290C, Ketawanggede, Lowokwaru, Malang
+Indonesia                               (+62)82249393410
+                                        sysufiana@gmail.com
+                    </pre>
+                </aside>
             </div>
-            <h2 style="text-align: center;">Our Mission</h1>
-             <div class="ourmiss"> 
-                <img src="misi.png">
-                <p>Mariteam is an online integrated fishery-commerce platform by connecting fisherman as local partner with customer in large number order B2B (Business to Business) more easily.</p>    
-             </div>
-         </div>
+        </div>
+            
+        </main>
+
+        <footer>
+            <p style="margin: 0 20px; ">Belajar Dasar Pemrograman Web &#169; 2020, Santi Yunika Sufiana</p>
+        </footer>
+        
 
          <script>
              function daftar(){
